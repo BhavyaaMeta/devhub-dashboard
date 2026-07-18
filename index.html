@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevHub | Bhavyaa Meta</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="greet">
+            <h1>Welcome Back, BEAUTIFULL... 😊</h1>
+            <h2 class="greeting-text"></h2>
+        </div>
+
+        <button class="theme-btn" onclick="toggleTheme()">
+            🌙
+        </button>
+
+    </header>
+
+    <!-- ================= CLOCK ================= -->
+
+    <section class="section-box">
+
+        <div class="section-card info-card">
+
+            <div class="icon">⏰</div>
+            <h3>Current Time</h3>
+            <div class="value" id="digital-clock"></div>
+
+        </div>
+
+        <div class="section-card info-card">
+            <div class="icon">📅</div>
+            <h3>Today's Date</h3>
+            <div class="value" id="date"></div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= WEATHER ================= -->
+
+    <section class="card">
+
+        <div class="section-heading">
+            <h2>🌤️ Weather</h2>
+            <p>Current weather in Surat</p>
+        </div>
+
+        <div class="weather-card">
+
+            <h1 class="weather-temp">--°C</h1>
+            <h3 class="weather-condition">Loading...</h3>
+            <div class="weather-extra">
+                <p>💧 Humidity</p>
+                <h3 class="humidity">--%</h3>
+            </div>
+
+            <div class="weather-extra">
+                <p>🌬️ Wind Speed</p>
+                <h3 class="wind">-- km/h</h3>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ================= GOALS ================= -->
+
+    <section class="card goals-card">
+
+        <div class="section-heading">
+            <h2>🎯 Today's Goals</h2>
+            <p>Plan your day and stay productive.</p>
+        </div>
+
+        <div class="goal-input-container">
+            <input type="text" class="goal-input" placeholder="Enter your goal...">
+            <button class="add-btn" onclick="addGoal()">
+                ADD
+            </button>
+        </div>
+        <div class="goal-list"></div>
+
+    </section>
+
+    <!-- ================= PRODUCTIVITY ================= -->
+
+    <section class="card">
+
+        <div class="section-heading">
+            <h2>📊 Today's Progress Tracker</h2>
+            <p>Analyse your productivity</p>
+        </div>
+
+        <div class="section-box">
+
+            <div class="section-card box">
+                <h3>Total Goals</h3>
+                <p class="value total">0</p>
+            </div>
+
+            <div class="section-card box">
+                <h3>Completed</h3>
+                <p class="value completed">0</p>
+            </div>
+
+            <div class="section-card box">
+                <h3>Remaining</h3>
+                <p class="value remain">0</p>
+            </div>
+
+            <div class="section-card box">
+                <h3>Completion</h3>
+                <p class="value percent">0%</p>
+            </div>
+
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+
+        <h3 class="message"></h3>
+
+    </section>
+
+    <!-- ================= QUOTE ================= -->
+
+    <section class="card">
+
+        <div class="section-heading">
+            <h2>💬 Quote of the Day</h2>
+            <p>Stay inspired.</p>
+        </div>
+
+        <div class="quote-card">
+            <p class="quote"></p>
+            <p class="author"></p>
+            <button class="new-btn" onclick="getQuote()">
+                New Quote
+            </button>
+        </div>
+
+    </section>
+
+    <!-- ================= LANDSCAPE ================= -->
+
+    <section class="card">
+
+    <div class="section-heading">
+        <h2>🌄 Daily Image</h2>
+        <p>A beautiful image for today.</p>
+    </div>
+
+    <div class="landscape-card">
+        <img id="landscape-img" src="" alt="Landscape">
+        <button id="new-image-btn" class="new-btn" style="margin-top: 30px;">
+            New Image
+        </button>
+    </div>
+
+    </section>
+    
+    <!-- ================= QUICK LINKS ================= -->
+
+    <section class="card">
+
+        <div class="section-heading">
+            <h2>🔗 Quick Links</h2>
+            <p>Easily access your favourite websites.</p>
+        </div>
+
+        <div class="section-box">
+            <div class="section-card">
+                <img src="https://cdn3.emoji.gg/emojis/76044-githublogo.png">
+                <h3>GitHub</h3>
+                <a href="https://github.com/BhavyaaMeta" target="_blank">
+                    Visit
+                </a>
+            </div>
+
+            <div class="section-card">
+                <img src="https://www.logo.wine/a/logo/LinkedIn/LinkedIn-Icon-Logo.wine.svg">
+                <h3>LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/bhavyaa-meta-a72b37319/" target="_blank">
+                    Visit
+                </a>
+            </div>
+
+            <div class="section-card">
+                <img src="https://img.magnific.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg?semt=ais_hybrid&w=740&q=80">
+                <h3>Instagram</h3>
+                <a href="https://www.instagram.com/beautifulbliss.meta/" target="_blank">
+                    Visit
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
